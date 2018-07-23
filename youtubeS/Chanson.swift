@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Musique {
+class Chanson {
     private var _artist: String
     private var _title: String
     private var _code: String

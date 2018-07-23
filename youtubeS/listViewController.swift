@@ -13,7 +13,9 @@ class listViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tabelView: UITableView!
     
-    var chansons = [Musique]()
+    var chansons = [Chanson]()
+    
+    let idCell = "chansonCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,20 +29,30 @@ class listViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let chanson = chansons[indexPath.row]
+        if let cell = tableView.dequeueReusableCell(withIdentifier: idCell) as? MusiqueCell {
+            cell.creeCell(chanson: chanson)
+            return cell
+        }
+            
+            return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
     }
    
     func addMusique() {
-        chansons = [Musique]()
-        let cool = Musique(artist: "omarion", title: "distance", code: "vsrhIUmPf")
+        chansons = [Chanson]()
+        let cool = Chanson(artist: "omarion", title: "distance", code: "vsrhIUmPf")
         chansons.append(cool)
-        let bien = Musique(artist: "dadju", title: "c'est pas bon", code: "oGH-_2qxaxE")
+        let bien = Chanson(artist: "dadju", title: "c'est pas bon", code: "oGH-_2qxaxE")
         chansons.append(bien)
-        let rap = Musique(artist: "soolking", title: "guerilla", code: "YLIWleB0g78")
+        let rap = Chanson(artist: "soolking", title: "guerilla", code: "YLIWleB0g78")
         chansons.append(rap)
-        let arab = Musique(artist: "saad", title: "ghazali", code: "lhnmVSB-Rxc")
+        let arab = Chanson(artist: "saad", title: "ghazali", code: "lhnmVSB-Rxc")
         chansons.append(arab)
-        let mixt = Musique(artist: "maitre gims", title: "migana", code: "NtccSFkAhrM")
+        let mixt = Chanson(artist: "maitre gims", title: "migana", code: "NtccSFkAhrM")
         chansons.append(mixt)
         tabelView.reloadData()
 

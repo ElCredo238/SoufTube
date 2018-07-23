@@ -13,6 +13,7 @@
 		E2B168362102DF2900F07A89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B168342102DF2900F07A89 /* LaunchScreen.storyboard */; };
 		E2B1683E2102E56700F07A89 /* listViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B1683D2102E56700F07A89 /* listViewController.swift */; };
 		E2B1684021034CF800F07A89 /* Chanson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B1683F21034CF800F07A89 /* Chanson.swift */; };
+		E2B168422103585100F07A89 /* MusiqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B168412103585100F07A89 /* MusiqueCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E2B168372102DF2900F07A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2B1683D2102E56700F07A89 /* listViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listViewController.swift; sourceTree = "<group>"; };
 		E2B1683F21034CF800F07A89 /* Chanson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chanson.swift; sourceTree = "<group>"; };
+		E2B168412103585100F07A89 /* MusiqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiqueCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				E2B168372102DF2900F07A89 /* Info.plist */,
 				E2B1683D2102E56700F07A89 /* listViewController.swift */,
 				E2B1683F21034CF800F07A89 /* Chanson.swift */,
+				E2B168412103585100F07A89 /* MusiqueCell.swift */,
 			);
 			path = youtubeS;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B1683E2102E56700F07A89 /* listViewController.swift in Sources */,
+				E2B168422103585100F07A89 /* MusiqueCell.swift in Sources */,
 				E2B1682C2102DF2800F07A89 /* AppDelegate.swift in Sources */,
 				E2B1684021034CF800F07A89 /* Chanson.swift in Sources */,
 			);
